@@ -1,7 +1,7 @@
 baseurl: /
 languageCode: en-US
 title: A Hugo website
-theme: hugo-lithium
+theme: hugo-ivy
 googleAnalytics: ''
 disqusShortname: ''
 ignoreFiles:
