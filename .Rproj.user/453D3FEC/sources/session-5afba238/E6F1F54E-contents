@@ -1,6 +1,6 @@
 baseurl: /
 languageCode: en-US
-title: A Hugo website
+title: Chencheng Mao
 theme: hugo-ivy
 googleAnalytics: ''
 disqusShortname: ''
@@ -14,14 +14,16 @@ menu:
   main:
     - name: About
       url: /about/
+    - name: CV
+      baseurl: /CV/CV.pdf
     - name: GitHub
-      url: https://github.com/rstudio/blogdown
+      url: https://github.com/mcc0612mcc0612
     - name: Twitter
       url: https://twitter.com/rstudio
 params:
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
   MathJaxVersion: 2.7.5
-  description: A website built through Hugo and blogdown.
+  description: 我们的故事未了.
   favicon: favicon.ico
   highlightjsCDN: //cdnjs.cloudflare.com/ajax/libs
   highlightjsLang:
@@ -41,3 +43,4 @@ markup:
       unsafe: yes
   highlight:
     codeFences: no
+
