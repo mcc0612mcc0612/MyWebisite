@@ -15,7 +15,7 @@ menu:
     - name: About
       url: /about/
     - name: CV
-      baseurl: /CV/CV.pdf
+      url: /CV/
     - name: GitHub
       url: https://github.com/mcc0612mcc0612
     - name: Twitter
