@@ -35,7 +35,7 @@ menu:
 
 params:
   description: "A Hugo theme ported from the static site generator Ivy."
-  footer: "&copy; [Yihui Xie](https://yihui.org) 2017-{Year} | [Github](https://github.com/yihui)"
+  footer: "&copy; [Chencheng Mao](https://vegetarian0fish.org) 2017-{Year} | [Github](https://github.com/mcc0612mcc0612)"
   highlightjsLang: ["latex"]
   highlightjsTheme: "github"
   highlightjsVersion: "11.7.0"
