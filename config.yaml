@@ -13,13 +13,14 @@ permalinks:
 menu:
   main:
     - name: About
-      url: /about/
+      url: /
     - name: CV
-      url: /CV
+      url: /CV/CV
     - name: GitHub
       url: https://github.com/mcc0612mcc0612
     - name: Twitter
       url: https://twitter.com/rstudio
+  
 params:
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
   MathJaxVersion: 2.7.5
