@@ -1,9 +1,8 @@
 ---
-title: Home
+title: About
+author: Mao Chencheng
+date: '2023-09-07'
 ---
-
-[<img src="https://simpleicons.org/icons/github.svg" style="max-width:15%;min-width:40px;float:right;" alt="Github repo" />](https://github.com/yihui/hugo-ivy)
-
 Hi,Welcome to my website! I'm Mao Chencheng, a senior student from [**University of Science and Technology of China(USTC)**](https://en.ustc.edu.cn)
 
 I'm now busy with applying my postgraduate program in U.S./Canada/HK/Singapore.
@@ -20,3 +19,8 @@ I'm now busy with applying my postgraduate program in U.S./Canada/HK/Singapore.
 ## Contact
 
 mcc0612 [at] mail [dot] ustc [dot] edu [dot] cn
+
+
+
+
+

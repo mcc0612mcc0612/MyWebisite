@@ -1,47 +1,48 @@
 baseurl: /
-languageCode: en-US
+languageCode: en-us
 title: Chencheng Mao
 theme: hugo-ivy
-googleAnalytics: ''
-disqusShortname: ''
-ignoreFiles:
-  - \.Rmd$
-  - \.Rmarkdown$
-  - _cache$
+googleAnalytics: ""
+disqusShortname: ""
+ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
+preserveTaxonomyNames: true
+footnotereturnlinkcontents: ↩
+enableGitInfo: true
+
 permalinks:
-  post: /:year/:month/:day/:slug/
+  note: /note/:year/:month/:day/:slug/
+  post: /post/:year/:month/:day/:slug/
+  CV: /post/:year/:month/:day/:slug/
 menu:
   main:
-    - name: About
-      url: /
-    - name: CV
-      url: /CV/
-    - name: GitHub
-      url: https://github.com/mcc0612mcc0612
-    - name: Twitter
-      url: https://twitter.com/rstudio
-  
+    - name: "Home"
+      url: "/"
+      weight: 1
+    - name: "About"
+      url: "/about/"
+      weight: 2
+    - name: "CV"
+      url: "/CV/"
+      weight: 2
+    - name: "Categories"
+      url: "/categories/"
+      weight: 3
+    - name: "Tags"
+      url: "/tags/"
+      weight: 4
+    - name: "Subscribe"
+      url: "/index.xml"
+
 params:
-  MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
-  MathJaxVersion: 2.7.5
-  description: 我们的故事未了.
-  favicon: favicon.ico
-  highlightjsCDN: //cdnjs.cloudflare.com/ajax/libs
-  highlightjsLang:
-    - r
-    - yaml
-  highlightjsTheme: github
-  highlightjsVersion: 9.12.0
-  logo:
-    alt: Logo
-    height: 50
-    url: logo.png
-    width: 50
+  description: "A Hugo theme ported from the static site generator Ivy."
+  footer: "&copy; [Yihui Xie](https://yihui.org) 2017-{Year} | [Github](https://github.com/yihui)"
+  highlightjsLang: ["latex"]
+  highlightjsTheme: "github"
+  highlightjsVersion: "11.7.0"
+
 markup:
-  defaultMarkdownHandler: goldmark
+  highlight:
+    codeFences: false
   goldmark:
     renderer:
-      unsafe: yes
-  highlight:
-    codeFences: no
-
+      unsafe: true
