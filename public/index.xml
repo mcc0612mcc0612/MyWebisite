@@ -7,6 +7,40 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>Hi,Welcome to my website! I&amp;rsquo;m Mao Chencheng, a senior student from University of Science and Technology of China(USTC)
+I&amp;rsquo;m now busy with applying my postgraduate program in U.S./Canada/HK/Singapore.
+Research Interest System and software security
+Program Analysis, e.g. Instrmuentation on LLVM IR to execute dynamic analysis
+Developing more useful automatic tools to detect potential bugs(e.g. data races) in softwares
+Applied cryptography and garbled circuit
+Contact mcc0612 [at] mail [dot] ustc [dot] edu [dot] cn</description>
+    </item>
+    
+    <item>
+      <title>CV</title>
+      <link>/cv/</link>
+      <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/cv/</guid>
+      <description>Please click there to view my CV. [click]</description>
+    </item>
+    
+    <item>
+      <title>Lorem Ipsum</title>
+      <link>/post/2023/09/07/lorem-ipsum/</link>
+      <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2023/09/07/lorem-ipsum/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Quisque mattis volutpat lorem vitae feugiat.</description>
+    </item>
+    
+    <item>
       <title>Another Note on A blogdown Tutorial</title>
       <link>/note/2017/06/14/another-note/</link>
       <pubDate>Wed, 14 Jun 2017 00:00:00 +0000</pubDate>
@@ -37,13 +71,13 @@ You cannot run any R code in a plain Markdown document, whereas in an R Markdown
     </item>
     
     <item>
-      <title>Lorem Ipsum</title>
-      <link>/post/2015/07/23/lorem-ipsum/</link>
-      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
+      <title></title>
+      <link>/note/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015/07/23/lorem-ipsum/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-Quisque mattis volutpat lorem vitae feugiat.</description>
+      <guid>/note/1/01/01/</guid>
+      <description>Preview your website
+hugo server -D open http://localhost:1313/</description>
     </item>
     
   </channel>

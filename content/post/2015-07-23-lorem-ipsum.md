@@ -1,6 +1,7 @@
 ---
 title: Lorem Ipsum
-date: '2015-07-23'
+author: Mao Chencheng
+date: '2023-09-07'
 categories:
   - Example
 tags:

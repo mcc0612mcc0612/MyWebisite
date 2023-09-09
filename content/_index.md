@@ -2,7 +2,8 @@
 title: Home
 ---
 
-[<img src="https://simpleicons.org/icons/github.svg" style="max-width:15%;min-width:40px;float:right;" alt="Github repo" />](https://github.com/yihui/hugo-ivy)
+[<img src="https://simpleicons.org/icons/github.svg" style="max-width:15%;min-width:40px;float:right;" alt="Github repo" />](https://github.com/mcc0612mcc0612)
+
 
 Hi,Welcome to my website! I'm Mao Chencheng, a senior student from [**University of Science and Technology of China(USTC)**](https://en.ustc.edu.cn)
 
