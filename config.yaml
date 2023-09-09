@@ -17,11 +17,11 @@ menu:
     - name: "Home"
       url: "/"
       weight: 1
-    - name: "About"
-      url: "/about/"
-      weight: 2
     - name: "CV"
       url: "/CV/"
+      weight: 2
+    - name: "Experience"
+      url: "/experience/"
       weight: 2
     - name: "Categories"
       url: "/categories/"
