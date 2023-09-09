@@ -5,5 +5,5 @@
             "ascending": true
         }
     ],
-    "path": "~/MyPage/public/cv"
+    "path": "~/MyPage/themes/hugo-ivy/layouts/_default"
 }

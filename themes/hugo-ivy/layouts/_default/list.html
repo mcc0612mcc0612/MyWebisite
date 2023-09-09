@@ -2,8 +2,8 @@
 
 {{ .Content }}
 
-{{ .Content }}
 
+{{ if not .IsHome }}
 <ul>
   {{ range (where (cond .IsHome .Site.RegularPages .Pages) "Section" "!=" "") }}
   <li>
@@ -12,6 +12,6 @@
   </li>
   {{ end }}
 </ul>
-
+{{end}}
 
 {{ partial "footer.html" . }}
