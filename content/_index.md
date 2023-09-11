@@ -7,7 +7,7 @@ title: Home
 
 Hi,Welcome to my website! I'm Mao Chencheng, a senior student from [**University of Science and Technology of China(USTC)**](https://en.ustc.edu.cn)
 
-I'm now busy with applying my postgraduate program in U.S./Canada/HK/Singapore.
+I'm now busy with applying for my postgraduate program in U.S./Canada/HK/Singapore.
 
 ## Research Interest
 

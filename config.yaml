@@ -20,7 +20,7 @@ menu:
     - name: "CV"
       url: "/CV/"
       weight: 2
-    - name: "Experience"
+    - name: "Experiences"
       url: "/experience/"
       weight: 2
     - name: "Categories"
