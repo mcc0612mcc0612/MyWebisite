@@ -1,5 +1,5 @@
 ---
-title: Lorem Ipsum
+title: Thread-before analysis
 author: Mao Chencheng
 date: '2023-09-07'
 categories:

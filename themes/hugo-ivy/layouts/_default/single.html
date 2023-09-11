@@ -1,4 +1,6 @@
+{{ if ne .Title "googledea28de297b78da4" }}
 {{ partial "header.html" . }}
+{{end}}
 
 {{ if .Params.show_toc }} {{ .TableOfContents }} {{ end }}
 
@@ -8,4 +10,6 @@
 {{ .Content }}
 {{ end }}
 
+{{ if ne .Title "googledea28de297b78da4" }}
 {{ partial "footer.html" . }}
+{{end}}
