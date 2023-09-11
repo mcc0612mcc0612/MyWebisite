@@ -2,8 +2,8 @@
     "sortOrder": [
         {
             "columnIndex": 2,
-            "ascending": true
+            "ascending": false
         }
     ],
-    "path": "~/MyPage/themes/hugo-ivy/layouts/_default"
+    "path": "~/MyPage/content/note"
 }

@@ -6,7 +6,24 @@
     <description>Recent content in Notes on Chencheng Mao</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Jun 2017 00:00:00 +0000</lastBuildDate><atom:link href="/note/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="/note/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ThreadSanitizer</title>
+      <link>/note/2023/07/20/tsan-note/</link>
+      <pubDate>Thu, 20 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/note/2023/07/20/tsan-note/</guid>
+      <description>ThreadSanitizer Tid: a unique thread ID
+ID: a unique memory location ID
+Event: READ, WRITE, WRLOCK, RDLOCK, WrUnlock, RdUnlock, Signal, Wait.
+Lock:
+In a thread $T$
+A lock L is write-held ←→ $$\text{NUM}(\text{WrLock}_T (L))&amp;gt; \text{NUM}(\text{WrUnLock}_T (L))$$ A lock L is read-held ←→ $\text{NUM}(\text{RDLock}_T (L))&amp;gt; \text{NUM}(\text{RDUnLock}_T (L))$ Lock sets: $LS$
+Happens-before arc: 对于事件 $X= \text{Signal}{T_X}(A_X)$ 和 $X=\text{Wait}{T_Y}(A_Y)$, 如果 $(A_X=A_Y) ∩ (T_X\neq T_Y)$, 并且$X$ 先被观察到，那么$(X,Y)$构成一条弧
+X和Y在不同线程，X发送信号，Y接受相同的信号，
+Happens-before: 如果两个事件$X=\text{TYPEX}{T_X}(A_X)$, $Y=\text{TYPEY}{T_Y}(A_Y)$,$X$ 在 $Y$ 之前发生，并且满足下列3个条件之一</description>
+    </item>
+    
     <item>
       <title>Another Note on A blogdown Tutorial</title>
       <link>/note/2017/06/14/another-note/</link>
@@ -27,11 +44,11 @@ Rob J Hyndman&amp;rsquo;s personal website. Live Free or Dichotomize by Lucy and
     </item>
     
     <item>
-      <title></title>
-      <link>/note/1/01/01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>How-to-build-website</title>
+      <link>/note/2017/06/13/a-quick-note/</link>
+      <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/note/1/01/01/</guid>
+      <guid>/note/2017/06/13/a-quick-note/</guid>
       <description>Preview your website
 hugo server -D open http://localhost:1313/</description>
     </item>

@@ -33,8 +33,8 @@ menu:
       url: "/index.xml"
 
 params:
-  description: "我们的故事未了。"
-  footer: "&copy; [Chencheng Mao](https://vegetarian0fish.org) 2020-{Year} | [Github](https://github.com/mcc0612mcc0612)"
+  description: "等晴天，等雨天，等待你给我意外"
+  footer: "&copy; [Chencheng Mao](https://vegetarian0fish.org) 2002-{Year} | [Github](https://github.com/mcc0612mcc0612)"
   highlightjsLang: ["latex"]
   highlightjsTheme: "github"
   highlightjsVersion: "11.7.0"

@@ -7,21 +7,6 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>
-      
-      <guid>/about/</guid>
-      <description>Hi,Welcome to my website! I&amp;rsquo;m Mao Chencheng, a senior student from University of Science and Technology of China(USTC)
-I&amp;rsquo;m now busy with applying my postgraduate program in U.S./Canada/HK/Singapore.
-Research Interest System and software security
-Program Analysis, e.g. Instrmuentation on LLVM IR to execute dynamic analysis
-Developing more useful automatic tools to detect potential bugs(e.g. data races) in softwares
-Applied cryptography and garbled circuit
-Contact mcc0612 [at] mail [dot] ustc [dot] edu [dot] cn</description>
-    </item>
-    
-    <item>
       <title>CV</title>
       <link>/cv/</link>
       <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>
@@ -31,13 +16,39 @@ Contact mcc0612 [at] mail [dot] ustc [dot] edu [dot] cn</description>
     </item>
     
     <item>
-      <title>Lorem Ipsum</title>
-      <link>/post/2023/09/07/lorem-ipsum/</link>
+      <title>googledea28de297b78da4</title>
+      <link>/googledea28de297b78da4/</link>
       <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>
       
-      <guid>/post/2023/09/07/lorem-ipsum/</guid>
+      <guid>/googledea28de297b78da4/</guid>
+      <description>google-site-verification: googledea28de297b78da4.</description>
+    </item>
+    
+    <item>
+      <title>Thread-before analysis</title>
+      <link>/post/2023/09/07/thread-before-analysis/</link>
+      <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2023/09/07/thread-before-analysis/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 Quisque mattis volutpat lorem vitae feugiat.</description>
+    </item>
+    
+    <item>
+      <title>ThreadSanitizer</title>
+      <link>/note/2023/07/20/tsan-note/</link>
+      <pubDate>Thu, 20 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/note/2023/07/20/tsan-note/</guid>
+      <description>ThreadSanitizer Tid: a unique thread ID
+ID: a unique memory location ID
+Event: READ, WRITE, WRLOCK, RDLOCK, WrUnlock, RdUnlock, Signal, Wait.
+Lock:
+In a thread $T$
+A lock L is write-held ←→ $$\text{NUM}(\text{WrLock}_T (L))&amp;gt; \text{NUM}(\text{WrUnLock}_T (L))$$ A lock L is read-held ←→ $\text{NUM}(\text{RDLock}_T (L))&amp;gt; \text{NUM}(\text{RDUnLock}_T (L))$ Lock sets: $LS$
+Happens-before arc: 对于事件 $X= \text{Signal}{T_X}(A_X)$ 和 $X=\text{Wait}{T_Y}(A_Y)$, 如果 $(A_X=A_Y) ∩ (T_X\neq T_Y)$, 并且$X$ 先被观察到，那么$(X,Y)$构成一条弧
+X和Y在不同线程，X发送信号，Y接受相同的信号，
+Happens-before: 如果两个事件$X=\text{TYPEX}{T_X}(A_X)$, $Y=\text{TYPEY}{T_Y}(A_Y)$,$X$ 在 $Y$ 之前发生，并且满足下列3个条件之一</description>
     </item>
     
     <item>
@@ -60,6 +71,16 @@ Rob J Hyndman&amp;rsquo;s personal website. Live Free or Dichotomize by Lucy and
     </item>
     
     <item>
+      <title>How-to-build-website</title>
+      <link>/note/2017/06/13/a-quick-note/</link>
+      <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/note/2017/06/13/a-quick-note/</guid>
+      <description>Preview your website
+hugo server -D open http://localhost:1313/</description>
+    </item>
+    
+    <item>
       <title>A Plain Markdown Post</title>
       <link>/post/2016/02/14/a-plain-markdown-post/</link>
       <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
@@ -72,12 +93,15 @@ You cannot run any R code in a plain Markdown document, whereas in an R Markdown
     
     <item>
       <title></title>
-      <link>/note/1/01/01/</link>
+      <link>/experience/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/note/1/01/01/</guid>
-      <description>Preview your website
-hugo server -D open http://localhost:1313/</description>
+      <guid>/experience/</guid>
+      <description>Education 09/2020 ~ 06/2024(expected), B.S. in Computer Science, University of Science and Technology of China).
+Research Experience NC State University
+Remote, Jan 2023 – Feb 2023 Advisor: Prof.Huiyang Zhou Research Topics: Performance Analysis and Characterization of Homomorphic Encryption The University of Hong Kong
+Hong Kong, July 2023 - Present Advisor: Prof.Chenxiong Qian Research Topics: Optimize ThreadSanitizer in Link Time Project Cminus-f Compiler [link]
+Implemented various optimization methods, including SSA, global value numbering, dead code elimination and constant propagation.</description>
     </item>
     
   </channel>

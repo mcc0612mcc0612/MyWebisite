@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>ThreadSanitizer - Chencheng Mao</title>
+    <meta property="og:title" content="ThreadSanitizer - Chencheng Mao">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+    
+      
+    
+
+    
+      
+      <meta property="description" content="Tid: a unique thread ID
+[&amp;hellip;] ID: a unique memory location ID
+[&amp;hellip;] Event: READ, WRITE, WRLOCK, RDLOCK, WrUnlock, RdUnlock, Signal, Wait.
+[&amp;hellip;] Lock:
+In a thread $T$
+[&amp;hellip;] Lock &amp;hellip;">
+      <meta property="og:description" content="Tid: a unique thread ID
+[&amp;hellip;] ID: a unique memory location ID
+[&amp;hellip;] Event: READ, WRITE, WRLOCK, RDLOCK, WrUnlock, RdUnlock, Signal, Wait.
+[&amp;hellip;] Lock:
+In a thread $T$
+[&amp;hellip;] Lock &amp;hellip;">
+      
+    
+
+    
+    
+    
+    <meta name="twitter:image" content="https://pic4.zhimg.com/80/v2-449d53eb7ce09ce48284d86999300f3f_1440w.webp">
+    
+    
+
+    
+
+    
+    
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+  <body class="note">
+    <header class="masthead">
+      <h1><a href="/">Chencheng Mao</a></h1>
+
+<p class="tagline">等晴天，等雨天，等待你给我意外</p>
+
+      <nav class="menu">
+  <input id="menu-check" type="checkbox" hidden/>
+  <label id="menu-label" for="menu-check" class="unselectable" hidden>
+    <span class="icon close-icon">✕</span>
+    <span class="icon open-icon">☰</span>
+    <span class="text">Menu</span>
+  </label>
+  <ul>
+  
+  
+  <li><a href="/">Home</a></li>
+  
+  <li><a href="/cv/">CV</a></li>
+  
+  <li><a href="/experience/">Experiences</a></li>
+  
+  <li><a href="/categories/">Categories</a></li>
+  
+  <li><a href="/tags/">Tags</a></li>
+  
+  <li><a href="/index.xml">Subscribe</a></li>
+  
+  
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>ThreadSanitizer</h1>
+
+
+
+<h3>
+
+Mao chencheng
+
+
+
+
+
+
+ / 
+2023-07-20
+</h3>
+
+<hr>
+
+
+      </header>
+
+
+
+
+
+
+<h1 id="threadsanitizer">ThreadSanitizer</h1>
+<ul>
+<li>
+<p>Tid: a unique thread ID</p>
+</li>
+<li>
+<p>ID: a unique memory location ID</p>
+</li>
+<li>
+<p>Event: READ, WRITE, WRLOCK, RDLOCK, WrUnlock, RdUnlock, Signal, Wait.</p>
+</li>
+<li>
+<p>Lock:</p>
+<p>In a thread $T$</p>
+<ul>
+<li>A lock L is write-held ←→ $\text{NUM}(\text{WrLock}_T (L))&gt; \text{NUM}(\text{WrUnLock}_T (L))$</li>
+<li>A lock L is read-held ←→ $\text{NUM}(\text{RDLock}_T (L))&gt; \text{NUM}(\text{RDUnLock}_T (L))$</li>
+</ul>
+</li>
+<li>
+<p>Lock sets: $LS$</p>
+</li>
+</ul>
+<p><strong>Happens-before arc:</strong> 对于事件 $X= \text{Signal}<em>{T_X}(A_X)$ 和 $X=\text{Wait}</em>{T_Y}(A_Y)$, 如果 $(A_X=A_Y) ∩ (T_X\neq T_Y)$, 并且$X$ 先被观察到，那么$(X,Y)$构成一条弧</p>
+<p>X和Y在不同线程，X发送信号，Y接受相同的信号，</p>
+<p><strong>Happens-before:</strong> 如果两个事件$X=\text{TYPEX}<em>{T_X}(A_X)$, $Y=\text{TYPEY}</em>{T_Y}(A_Y)$,$X$ 在 $Y$ 之前发生，并且满足下列3个条件之一</p>
+<ul>
+<li>$T_X=T_Y$</li>
+<li>$(X,Y)$ 是Happens-before arc</li>
+<li>传递性</li>
+</ul>
+<p><strong>Segment Set</strong>: Segment集合 ${S_1,S_2&hellip;,S_N}$ 满足对 $\forall i,j:S_i\npreceq S_j$. 即SS里所有的segments都不相关</p>
+<p><strong>Concurrent</strong>(并行): 两个事件 $X,Y$, $X\npreceq Y$ AND $Y\npreceq X$ AND $LS(X)∩LS(Y)=\emptyset$</p>
+<p><em>即X与Y不存在逻辑的偏序性，且没有相同的锁对其进行同步</em></p>
+<p>**Data Race: ** 两个并行的线程同时访问某个内存，并且至少有一个是 $\text{WRITE}$</p>
+<p>读写段集合$SS_{Rd}$, $SS_{Wr}$ 满足条件A</p>
+<p>$\forall S_r\in SS_{Rd},S_w\in SS_{Wr}:S_r\npreceq S_w$</p>
+<p><em>注：$S_r\npreceq S_w$ 的意味：(1) $S_r$ happens-after $S_w$; (2) $S_r$ 与 $S_w$ 不相关</em></p>
+<p>算法</p>
+<p><img src="https://pic4.zhimg.com/80/v2-449d53eb7ce09ce48284d86999300f3f_1440w.webp" alt="img"></p>
+<p>在个内存事件发生后维护 $SS_{Rd}$, $SS_{Wr}$ ，然后检测data race。</p>
+<p><strong>更新过程(Line4~Line9)：</strong></p>
+<ul>
+<li>如果内存事件是读，$SS_{Rd}$ 更新为 ${s:s\in SS_{Rd}∩ s\npreceq \text{seg} }$; $SS_{Wr}$ 更新为 ${s:s\in SS_{Rd}∩ s\npreceq \text{seg} }∩ {\text{seg}}$</li>
+<li>如果内存事件是写，$SS_{Rd}$ 更新为 ${s:s\in SS_{Rd}∩ s\npreceq \text{seg} }∩{\text{seg}}$</li>
+</ul>
+<p>更新过程使得$SS_{Rd}$, $SS_{Wr}$ 永远满足条件A</p>
+<p><strong>检测冲突：</strong><img src="https://pic4.zhimg.com/80/v2-eae33324acb54b57c78be189f108ed5b_1440w.webp" alt="img"></p>
+<p>循环遍历$SS_{Wr}$中每个片段(Line3)，记片段为$W_1$ (Line4)，记该片段的锁集合为$LS_1$ (Line5), 检查每个可能和$W_1$冲突的写片段（Line7~Line12)，检查每个可能和$W_1$冲突的读片段（Line14~Line17)</p>
+<p>在这里检测的是相并行的两个Segment。更新过程完成的是 $X\npreceq Y$ AND $Y\npreceq X$, 冲突检查完成的是$LS(X)∩LS(Y)=\emptyset$</p>
+<blockquote>
+<p><strong>Concurrent</strong>(并行): 两个事件 $X,Y$, $X\npreceq Y$ AND $Y\npreceq X$ AND $LS(X)∩LS(Y)=\emptyset$</p>
+</blockquote>
+
+
+
+
+  <footer>
+  
+  
+
+  
+  <hr>
+  <div class="copyright">© <a href="https://vegetarian0fish.org">Chencheng Mao</a> 2020-2023 | <a href="https://github.com/mcc0612mcc0612">Github</a></div>
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+
+
