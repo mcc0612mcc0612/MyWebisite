@@ -21,3 +21,5 @@ I'm now busy with applying for my postgraduate program in U.S./Canada/HK/Singapo
 ## Contact
 
 mcc0612 [at] mail [dot] ustc [dot] edu [dot] cn
+
+<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=EK8zeQ8yj86a59VcmQwD7ihDcwQE-oH7Eln47ei79WU&cl=ffffff&w=a"></script>
