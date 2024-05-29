@@ -29,8 +29,6 @@ menu:
     - name: "Tags"
       url: "/tags/"
       weight: 4
-    - name: "Subscribe"
-      url: "/index.xml"
 
 params:
   description: "等晴天，等雨天，等待你给我意外"

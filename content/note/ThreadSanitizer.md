@@ -2,6 +2,9 @@
 title: ThreadSanitizer
 author: Mao Chencheng
 date: '2023-07-20'
+output:
+  html_document:
+    mathjax: default
 categories:
   - LLVM
 tags:
