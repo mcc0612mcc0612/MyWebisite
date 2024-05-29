@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How-to on Chencheng Mao</title>
+    <link>/categories/how-to/</link>
+    <description>Recent content in How-to on Chencheng Mao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Jun 2017 00:00:00 +0000</lastBuildDate><atom:link href="/categories/how-to/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How-to-build-website</title>
+      <link>/note/2017/06/13/a-quick-note/</link>
+      <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/note/2017/06/13/a-quick-note/</guid>
+      <description>Preview your website
+hugo server -D open http://localhost:1313/</description>
+    </item>
+    
+  </channel>
+</rss>

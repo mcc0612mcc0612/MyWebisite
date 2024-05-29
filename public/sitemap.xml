@@ -2,73 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2023-09-11T13:34:27+08:00</lastmod>
-  </url><url>
     <loc>/cv/</loc>
     <lastmod>2023-09-07T22:09:16+08:00</lastmod>
-  </url><url>
-    <loc>/categories/example/</loc>
-    <lastmod>2023-09-11T13:34:27+08:00</lastmod>
   </url><url>
     <loc>/googledea28de297b78da4/</loc>
     <lastmod>2023-09-11T13:34:27+08:00</lastmod>
   </url><url>
-    <loc>/tags/markdown/</loc>
-    <lastmod>2023-09-11T13:34:27+08:00</lastmod>
+    <loc>/categories/</loc>
+    <lastmod>2024-05-29T23:56:53+08:00</lastmod>
   </url><url>
-    <loc>/post/</loc>
-    <lastmod>2023-09-11T13:34:27+08:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2023-09-11T13:34:27+08:00</lastmod>
-  </url><url>
-    <loc>/post/2023/09/07/thread-before-analysis/</loc>
-    <lastmod>2023-09-11T13:34:27+08:00</lastmod>
+    <loc>/categories/llvm/</loc>
+    <lastmod>2024-05-29T23:56:53+08:00</lastmod>
   </url><url>
     <loc>/tags/note/</loc>
-    <lastmod>2023-07-20T00:00:00+00:00</lastmod>
+    <lastmod>2024-05-29T23:56:53+08:00</lastmod>
   </url><url>
     <loc>/note/</loc>
-    <lastmod>2023-09-09T10:23:27+08:00</lastmod>
+    <lastmod>2024-05-29T23:56:53+08:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2024-05-29T23:56:53+08:00</lastmod>
   </url><url>
     <loc>/note/2023/07/20/tsan-note/</loc>
-    <lastmod>2023-07-20T00:00:00+00:00</lastmod>
+    <lastmod>2024-05-29T23:56:53+08:00</lastmod>
   </url><url>
-    <loc>/note/2017/06/14/another-note/</loc>
-    <lastmod>2023-09-07T22:09:16+08:00</lastmod>
-  </url><url>
-    <loc>/tags/tutorial/</loc>
-    <lastmod>2023-09-07T22:09:16+08:00</lastmod>
+    <loc>/categories/how-to/</loc>
+    <lastmod>2023-09-12T00:42:31+08:00</lastmod>
   </url><url>
     <loc>/note/2017/06/13/a-quick-note/</loc>
-    <lastmod>2023-09-07T22:09:16+08:00</lastmod>
-  </url><url>
-    <loc>/note/2017/06/13/a-quick-note/</loc>
-    <lastmod>2023-09-09T10:23:27+08:00</lastmod>
-  </url><url>
-    <loc>/post/2016/02/14/a-plain-markdown-post/</loc>
-    <lastmod>2023-09-07T22:09:16+08:00</lastmod>
-  </url><url>
-    <loc>/tags/blogdown/</loc>
-    <lastmod>2023-09-07T22:09:16+08:00</lastmod>
-  </url><url>
-    <loc>/categories/hugo/</loc>
-    <lastmod>2023-09-07T22:09:16+08:00</lastmod>
-  </url><url>
-    <loc>/tags/mathjax/</loc>
-    <lastmod>2023-09-07T22:09:16+08:00</lastmod>
-  </url><url>
-    <loc>/tags/pandoc/</loc>
-    <lastmod>2023-09-07T22:09:16+08:00</lastmod>
-  </url><url>
-    <loc>/tags/rstudio/</loc>
-    <lastmod>2023-09-07T22:09:16+08:00</lastmod>
+    <lastmod>2023-09-12T00:42:31+08:00</lastmod>
   </url><url>
     <loc>/experience/</loc>
     <lastmod>2023-09-09T13:04:49+08:00</lastmod>
   </url><url>
     <loc>/</loc>
-    <lastmod>2023-09-11T13:14:40+08:00</lastmod>
+    <lastmod>2024-05-29T23:56:53+08:00</lastmod>
   </url>
 </urlset>

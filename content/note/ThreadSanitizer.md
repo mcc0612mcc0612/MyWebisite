@@ -4,7 +4,7 @@ author: Mao Chencheng
 date: '2023-07-20'
 output:
   html_document:
-    mathjax: default
+    mathjax: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML.js"
 categories:
   - LLVM
 tags:

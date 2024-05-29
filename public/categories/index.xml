@@ -6,22 +6,22 @@
     <description>Recent content in Categories on Chencheng Mao</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Example</title>
-      <link>/categories/example/</link>
-      <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>
+      <title>LLVM</title>
+      <link>/categories/llvm/</link>
+      <pubDate>Thu, 20 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>/categories/example/</guid>
+      <guid>/categories/llvm/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Hugo</title>
-      <link>/categories/hugo/</link>
-      <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
+      <title>How-to</title>
+      <link>/categories/how-to/</link>
+      <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/categories/hugo/</guid>
+      <guid>/categories/how-to/</guid>
       <description></description>
     </item>
     

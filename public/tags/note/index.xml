@@ -18,10 +18,11 @@ ID: a unique memory location ID
 Event: READ, WRITE, WRLOCK, RDLOCK, WrUnlock, RdUnlock, Signal, Wait.
 Lock:
 In a thread $T$
-A lock L is write-held ←→ $$\text{NUM}(\text{WrLock}_T (L))&amp;gt; \text{NUM}(\text{WrUnLock}_T (L))$$ A lock L is read-held ←→ $\text{NUM}(\text{RDLock}_T (L))&amp;gt; \text{NUM}(\text{RDUnLock}_T (L))$ Lock sets: $LS$
-Happens-before arc: 对于事件 $X= \text{Signal}{T_X}(A_X)$ 和 $X=\text{Wait}{T_Y}(A_Y)$, 如果 $(A_X=A_Y) ∩ (T_X\neq T_Y)$, 并且$X$ 先被观察到，那么$(X,Y)$构成一条弧
+A lock L is write-held ←→ $\text{NUM}(\text{WrLock}_T (L))&amp;gt; \text{NUM}(\text{WrUnLock}_T (L))$ A lock L is read-held ←→ $\text{NUM}(\text{RDLock}_T (L))&amp;gt; \text{NUM}(\text{RDUnLock}_T (L))$ Lock sets: $LS$
+Happens-before arc: 对于事件$X = Signal_{T_X}(A_X)$ 和 $X=Wait_{T_Y}(A_Y)$, 如果 $(A_X=A_Y) ∩ (T_X\neq T_Y)$, 并且$X$先被观察到，那么$(X,Y)$构成一条弧
 X和Y在不同线程，X发送信号，Y接受相同的信号，
-Happens-before: 如果两个事件$X=\text{TYPEX}{T_X}(A_X)$, $Y=\text{TYPEY}{T_Y}(A_Y)$,$X$ 在 $Y$ 之前发生，并且满足下列3个条件之一</description>
+Happens-before: 如果两个事件$X=TYPEX_{T_X}(A_X)$, $Y=TYPEY_{T_Y}(A_Y)$,$X$ 在 $Y$ 之前发生，并且满足下列3个条件之一
+$T_X=T_Y$ $(X,Y)$ 是Happens-before arc 传递性 Segment Set: Segment集合 ${S_1,S_2&amp;hellip;,S_N}$ 满足对 $\forall i,j:S_i\npreceq S_j$.</description>
     </item>
     
   </channel>
