@@ -4,6 +4,7 @@ author: Yihui Xie
 date: '2017-06-13'
 categories:
   - How-to
+draft: true
 slug: a-quick-note
 ---
 

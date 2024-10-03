@@ -2,9 +2,6 @@
 title: ThreadSanitizer
 author: Mao Chencheng
 date: '2023-07-20'
-output:
-  html_document:
-    mathjax: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML.js"
 categories:
   - LLVM
 tags:
@@ -41,9 +38,9 @@ X和Y在不同线程，X发送信号，Y接受相同的信号，
 - $(X,Y)$ 是Happens-before arc
 - 传递性
 
-**Segment Set**: Segment集合 $\{S_1,S_2...,S_N\}$ 满足对 $\forall i,j:S_i\npreceq S_j$. 即SS里所有的segments都不相关
+**Segment Set**: Segment集合 $\{S_1,S_2...,S_N\}$ 满足对 $\forall i,j:S_i\not\preceq S_j$. 即SS里所有的segments都不相关
 
-**Concurrent**(并行): 两个事件 $X,Y$, $X\npreceq Y$ AND $Y\npreceq X$ AND $LS(X)∩LS(Y)=\emptyset$
+**Concurrent**(并行): 两个事件 $X,Y$, $X\not\preceq Y$ AND $Y\not\preceq X$ AND $LS(X)∩LS(Y)=\emptyset$
 
 *即X与Y不存在逻辑的偏序性，且没有相同的锁对其进行同步*
 
@@ -53,9 +50,9 @@ X和Y在不同线程，X发送信号，Y接受相同的信号，
 
 读写段集合$SS_{Rd}$, $SS_{Wr}$ 满足条件A
 
-$\forall S_r\in SS_{Rd},S_w\in SS_{Wr}:S_r\npreceq S_w$
+$\forall S_r\in SS_{Rd},S_w\in SS_{Wr}:S_r\not\preceq S_w$
 
-*注：$S_r\npreceq S_w$ 的意味：(1) $S_r$ happens-after $S_w$; (2) $S_r$ 与 $S_w$ 不相关*
+*注：$S_r\not\preceq S_w$ 的意味：(1) $S_r$ happens-after $S_w$; (2) $S_r$ 与 $S_w$ 不相关*
 
 
 
@@ -67,8 +64,8 @@ $\forall S_r\in SS_{Rd},S_w\in SS_{Wr}:S_r\npreceq S_w$
 
 **更新过程(Line4~Line9)：**
 
-- 如果内存事件是读，$SS_{Rd}$ 更新为 $\{s:s\in SS_{Rd}∩ s\npreceq \text{seg} \}$; $SS_{Wr}$ 更新为 $\{s:s\in SS_{Rd}∩ s\npreceq \text{seg} \}∩ \{\text{seg}\}$
-- 如果内存事件是写，$SS_{Rd}$ 更新为 $\{s:s\in SS_{Rd}∩ s\npreceq \text{seg} \}∩\{\text{seg}\}$
+- 如果内存事件是读，$SS_{Rd}$ 更新为 $\{s:s\in SS_{Rd}∩ s\not\preceq \text{seg} \}$; $SS_{Wr}$ 更新为 $\{s:s\in SS_{Rd}∩ s\not\preceq \text{seg} \}∩ \{\text{seg}\}$
+- 如果内存事件是写，$SS_{Rd}$ 更新为 $\{s:s\in SS_{Rd}∩ s\not\preceq \text{seg} \}∩\{\text{seg}\}$
 
 更新过程使得$SS_{Rd}$, $SS_{Wr}$ 永远满足条件A
 
@@ -76,6 +73,6 @@ $\forall S_r\in SS_{Rd},S_w\in SS_{Wr}:S_r\npreceq S_w$
 
 循环遍历$SS_{Wr}$中每个片段(Line3)，记片段为$W_1$ (Line4)，记该片段的锁集合为$LS_1$ (Line5), 检查每个可能和$W_1$冲突的写片段（Line7\~Line12)，检查每个可能和$W_1$冲突的读片段（Line14~Line17)
 
-在这里检测的是相并行的两个Segment。更新过程完成的是 $X\npreceq Y$ AND $Y\npreceq X$, 冲突检查完成的是$LS(X)∩LS(Y)=\emptyset$
+在这里检测的是相并行的两个Segment。更新过程完成的是 $X\not\preceq Y$ AND $Y\not\preceq X$, 冲突检查完成的是$LS(X)∩LS(Y)=\emptyset$
 
-> **Concurrent**(并行): 两个事件 $X,Y$, $X\npreceq Y$ AND $Y\npreceq X$ AND $LS(X)∩LS(Y)=\emptyset$
+> **Concurrent**(并行): 两个事件 $X,Y$, $X\not\preceq Y$ AND $Y\not\preceq X$ AND $LS(X)∩LS(Y)=\emptyset$

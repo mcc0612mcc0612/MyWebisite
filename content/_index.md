@@ -2,7 +2,10 @@
 title: Home
 ---
 
-[<img src="https://simpleicons.org/icons/github.svg" style="max-width:15%;min-width:40px;float:right;" alt="Github repo" />](https://github.com/mcc0612mcc0612)
+<div style="text-align: center;">
+    <img src="/photo/zhenyuan.jpg" style="max-width: 60%; min-width: 40px;" alt="selfie"/>
+    <figcaption>Zhenyuan(镇远), China, 2024</figcaption>
+</div>
 
 
 Hi,Welcome to my website! I'm Mao Chencheng, a senior student from [**University of Science and Technology of China(USTC)**](https://en.ustc.edu.cn)
