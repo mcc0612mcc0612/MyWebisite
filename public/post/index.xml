@@ -1,25 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Chencheng Mao</title>
-    <link>/</link>
-    <description>Recent content in Home on Chencheng Mao</description>
+    <title>Posts on Chencheng Mao</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on Chencheng Mao</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Experience</title>
-      <link>/experience/</link>
-      <pubDate>Sat, 19 Oct 2024 00:00:00 +0000</pubDate>
-      
-      <guid>/experience/</guid>
-      <description>Education 09/2020 ~ 06/2024, B.S. in Computer Science, University of Science and Technology of China).
-Research Experience NC State University
-Remote, Jan 2023 – Feb 2023 Advisor: Prof.Huiyang Zhou Research Topics: Performance Analysis and Characterization of Homomorphic Encryption The University of Hong Kong
-Hong Kong, July 2023 - Sept 2023 Advisor: Prof.Chenxiong Qian Research Topics: Optimize ThreadSanitizer in Link Time The University of Utah
-Salt Lake City, Sept 2024 - Present Advisor: Prof.</description>
-    </item>
-    
+    <lastBuildDate>Sat, 19 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>我思君处君思我—谈唐宋情词的一种思念模式</title>
       <link>/post/2024/10/19/%E6%88%91%E6%80%9D%E5%90%9B%E5%A4%84%E5%90%9B%E6%80%9D%E6%88%91%E8%B0%88%E5%94%90%E5%AE%8B%E6%83%85%E8%AF%8D%E7%9A%84%E4%B8%80%E7%A7%8D%E6%80%9D%E5%BF%B5%E6%A8%A1%E5%BC%8F/</link>
@@ -48,24 +35,6 @@ Salt Lake City, Sept 2024 - Present Advisor: Prof.</description>
 菩萨蛮·平林漠漠烟如织 李白(存疑)〔唐代〕
 平林漠漠烟如织，寒山一带伤心碧。暝色入高楼，有人楼上愁。 玉阶空伫立，宿鸟归飞急。何处是归程？长亭更短亭。
 换我心为你心，始知相忆深 </description>
-    </item>
-    
-    <item>
-      <title>CV</title>
-      <link>/cv/</link>
-      <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>
-      
-      <guid>/cv/</guid>
-      <description>Please click there to view my CV. [click]</description>
-    </item>
-    
-    <item>
-      <title>googledea28de297b78da4</title>
-      <link>/googledea28de297b78da4/</link>
-      <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>
-      
-      <guid>/googledea28de297b78da4/</guid>
-      <description>google-site-verification: googledea28de297b78da4.</description>
     </item>
     
   </channel>

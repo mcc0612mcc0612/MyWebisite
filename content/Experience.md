@@ -26,8 +26,9 @@ date: '2024-10-19'
 
 **The University of Utah**
 - Salt Lake City, Sept 2024 - Present
-- Advisor: [**Prof.Jun Xu**](https://sites.google.com/view/junxzm)
+- Advisor: [Prof.Jun Xu](https://sites.google.com/view/junxzm)
 - Research Topic: IPC Fuzzing
+
 ## Project
 
 **Cminus-f Compiler** [[link]](https://github.com/mcc0612mcc0612/compiler)
