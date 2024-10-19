@@ -1,16 +1,23 @@
 ---
 title: Home
+date: '2024-10-19'
 ---
-
-<div style="text-align: center;">
-    <img src="/photo/zhenyuan.jpg" style="max-width: 60%; min-width: 40px;" alt="selfie"/>
-    <figcaption>Zhenyuan(镇远), China, 2024</figcaption>
+<div style="display: flex; justify-content: center; gap: 0px; padding: 0; margin: 0;">
+  <div style="text-align: center;">
+      <img src="/photo/zhenyuan.jpg" style="max-width: 80%; " alt="selfie"/>
+      <figcaption>Zhenyuan(镇远), China, 2024</figcaption>
+  </div>
+  
+  <div style="text-align: center;">
+      <img src="/photo/ccs2024.jpg" style="max-width: 80%;" alt="selfie"/>
+      <figcaption>Salt Lake City, US, 2024</figcaption>
+  </div>
 </div>
 
 
-Hi,Welcome to my website! I'm Mao Chencheng, a senior student from [**University of Science and Technology of China(USTC)**](https://en.ustc.edu.cn)
+Hi,Welcome to my website! 
 
-I'm going to start my PhD journey in [**the University of Utah**](https://www.utah.edu/) since 2024 Fall.
+I'm a first year PhD student in [**the University of Utah**](https://www.utah.edu/) under the supervision of [**Prof.Jun Xu**](https://sites.google.com/view/junxzm). .
 
 ## Research Interest
 

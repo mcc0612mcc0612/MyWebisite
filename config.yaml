@@ -31,7 +31,7 @@ menu:
       weight: 4
 
 params:
-  description: "等晴天，等雨天，等待你给我意外"
+  description: "文章信美知何用，漫赢得，天涯羁旅"
   footer: "&copy; [Chencheng Mao](https://vegetarian0fish.org) 2002-{Year} | [Github](https://github.com/mcc0612mcc0612)"
   highlightjsLang: ["latex"]
   highlightjsTheme: "github"
