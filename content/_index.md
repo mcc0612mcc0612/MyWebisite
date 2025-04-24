@@ -31,5 +31,3 @@ I'm a first year PhD student in [**the University of Utah**](https://www.utah.ed
 ## Contact
 
 u1520758 [at] utah [dot] edu 
-
-<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=EK8zeQ8yj86a59VcmQwD7ihDcwQE-oH7Eln47ei79WU&cl=ffffff&w=a"></script>
